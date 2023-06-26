@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <title>Golden Dragon Restaurant</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+      </div>
+      <ul class="navbar-menu">
+        <li class="navbar-menu-item"><a href="#about">ABOUT</a></li>
+        <li class="navbar-menu-item"><a href="#menu">MENU</a></li>
+        <li class="navbar-menu-item"><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+    <section id="home">
+      <div class="home-main">
+        <div class="background-img">
+         
+        </div>
+
+        <div class="home-message">
+          <h1>GOLDEN DRAGON</h1>
+          <h5><i>Founded in 1998</i></h5>
+          <button
+            onclick="window.open('https://www.opentable.com/', '_blank')"
+            class="home-btn"
+          >
+            RESERVE
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>ABOUT US</h2>
+      <div class="about-images1">
+        <div>
+          <img
+            src="./images/restaurant1.jpg"
+            alt="restaurant"
+            class="about-img1"
+          />
+        </div>
+        <div>
+          <p>
+            Welcome to Golden Dragon, a culinary gem that has been delighting
+            patrons with its sophisticated interpretation of traditional Chinese
+            cuisine since 1998. We take immense pride in offering an
+            extraordinary dining experience that blends authentic flavors,
+            impeccable service, and an elegant ambiance.
+          </p>
+          <p>
+            We believe that food is an art form. Our talented chefs meticulously
+            craft each dish, paying homage to the rich culinary heritage of
+            China while infusing their creations with a contemporary twist. From
+            exquisite Peking Duck roasted to perfection, to flavorful Beef
+            Noodles Soup simmered with aromatic spices, every bite tells a story
+            of culinary mastery and dedication.
+          </p>
+          <p>
+            Whether you're seeking an intimate dinner for two or hosting a
+            special celebration, our inviting ambiance sets the stage for a
+            truly memorable dining experience.
+          </p>
+        </div>
+      </div>
+      <div class="about-images2">
+        <img src="./images/chef.jpg" alt="chef" class="about-img2" />
+        <div>
+          <p>
+            At Golden Dragon, we prioritize the satisfaction of our guests above
+            all else. Our attentive and knowledgeable staff is dedicated to
+            ensuring that your visit is nothing short of exceptional. From
+            recommending the perfect wine pairing to accommodating dietary
+            preferences, we strive to exceed your expectations and create
+            lasting memories.
+          </p>
+          <p>
+            Join us at Golden Dragon and embark on a culinary journey that
+            celebrates the artistry and flavors of traditional Chinese cuisine.
+            Indulge in our delectable dishes, savor the harmonious balance of
+            flavors, and immerse yourself in the warm hospitality that has
+            defined our restaurant for over two decades.
+          </p>
+          <p>
+            Discover a world where tradition meets sophistication at Golden
+            Dragon. Experience the allure of authentic Chinese cuisine
+            reimagined for the modern palate. We look forward to welcoming you
+            and sharing our passion for exceptional dining.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu">
+      <h2>MENU</h2>
+      <p class="menu-intro">
+        <i>A Sophisticated Interpretation Of Traditional Chinese Cuisine</i>
+      </p>
+      <div class="menu-list">
+        <div class="menu-list1">
+          <h2>Mains</h2>
+          <p id="text1" class="dish" onclick="openImage('bambu')">
+            Bambu & Mushroom Delight
+          </p>
+          <p id="text2" class="dish" onclick="openImage('beefnoodles')">
+            Fragrant Beef Noodle Supreme
+          </p>
+          <p id="text3" class="dish" onclick="openImage('chowmein')">
+            Heavenly Chow Mein Fusion
+          </p>
+          <p id="text4" class="dish" onclick="openImage('duck')">
+            Imperial Pekin Duck Delicacy
+          </p>
+          <p id="text5" class="dish" onclick="openImage('dumplings')">
+            Exquisite Dumpling Medley
+          </p>
+          <p id="text6" class="dish" onclick="openImage('friedrice')">
+            Gourmet Fried Rice Symphony
+          </p>
+          <p id="text7" class="dish" onclick="openImage('glazedpork')">
+            Honey-Glazed Pork Perfection
+          </p>
+          <p id="text8" class="dish" onclick="openImage('hotpot')">
+            Opulent Hot Pot Extravaganza
+          </p>
+          <p id="text9" class="dish" onclick="openImage('porkbelly')">
+            Premium Braised Pork Belly
+          </p>
+          <p id="text10" class="dish" onclick="openImage('spicybeef')">
+            Fiery Spicy Beef
+          </p>
+          <p id="text11" class="dish" onclick="openImage('springrolls')">
+            Artisanal Spring Roll Spectacle
+          </p>
+
+          <div id="imagen" style="display: none">
+            <img src="" alt="Imagen" onclick="closeImage()" id="imagenGrande" />
+          </div>
+        </div>
+        <div class="menu-image">
+          <img src="./images/pan.jpg" class="pan" alt="pan" />
+        </div>
+      </div>
+      <p class="info">
+        *Click on the name to display the image of each <b>main</b> dish. <br />
+        *Click on the image to close it.
+      </p>
+      <div class="menu-desserts-cocktails">
+        <div class="desserts">
+          <div>
+            <h2 class="h2-desserts-cocktails">Desserts</h2>
+          </div>
+          <h4>Imperial Jewel</h4>
+          <p>
+            Dragon fruit sorbet, lychee and mango pearls, and a sprinkle of
+            edible gold.
+          </p>
+          <h4>Golden Blossom</h4>
+          <p>
+            A delicate pastry filled with a sweet lotus seed paste and adorned
+            with edible gold leaf.
+          </p>
+          <h4>Jade Mist</h4>
+          <p>
+            A light and creamy matcha green tea mousse served with a side of
+            lychee-infused jelly.
+          </p>
+          <h4>Silk Road Delight</h4>
+          <p>
+            Layers of silky-smooth almond tofu, delicate rose-infused syrup, and
+            a sprinkle of crushed pistachios.
+          </p>
+        </div>
+        <div class="coctails">
+          <div>
+            <h2 class="h2-desserts-cocktails">Cocktails</h2>
+          </div>
+          <h4>Green Tea Elixir</h4>
+          <p>
+            A refreshing blend of premium green tea infused with delicate floral
+            notes and hints of citrus.
+          </p>
+          <h4>Lychee Martini</h4>
+          <p>
+            A sophisticated cocktail made with premium vodka, lychee liqueur,
+            and a splash of fresh lime juice.
+          </p>
+          <h4>Chinese Mule</h4>
+          <p>
+            A twist on the classic Moscow Mule, featuring a mix of vodka, ginger
+            beer, and a splash of squeezed lime.
+          </p>
+          <h4>Dragon's Breath</h4>
+          <p>
+            An exotic mocktail bursting with flavors of dragon fruit, pineapple
+            juice, and a touch of mint.
+          </p>
+        </div>
+      </div>
+    </section>
+<section id="contact">
+
+<h2>CONTACT US</h2>
+    <p class="intro-p">
+        We would <b>love</b> to hear from you! If you have any questions, comments or feedback about our restaurant,
+         please don't hesitate to get in touch with us. 
+        We will do our best to respond to your message as soon as possible.
+        Thank you for your interest in Golden Dragon Restaurant, and we hope to see you soon!
+    </p>
+<div class="contact-section">
+    <div class="contact-section1">
+
+    <form class="contact-form" action="index.html" method="post">
+        <label>First Name</label>
+        <input type="text" class="contact-form-text" placeholder="First Name">
+        <label>Last Name</label>
+        <input type="text" class="contact-form-text" placeholder="Last Name"><br>
+        <label>Your Email</label>
+        <input type="text" class="contact-form-text" placeholder="Your Email">
+       <label>Your Message</label>
+        <textarea class="contact-form-text" placeholder="Your Message"></textarea>
+        <input type="submit" class="contact-form-btn" value="Send">
+    </form>
+
+    </div>
+
+  
+
+    <div class="address">
+      <p>goldendragon@gmail.com</p>
+      <p>+44123456789</p>
+      <p>GOLD12 Dragon Street, 4</p>
+    </div>
+  </div>
+        <div class="card-container">
+          <div class="card"> 
+            <img src="https://images.unsplash.com/photo-1574164052277-b9ea797de8e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="chef">
+          </div>
+          <div class="card"> 
+            <img src="https://images.unsplash.com/photo-1623689043725-743d4aa0d91a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80" alt="ramen">
+          </div>
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1624067046879-cca70a7cf79c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="dumplings">
+          </div>
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1526318896980-cf78c088247c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80">
+          </div>
+      </div>
+      
+    </section>
+
+    <hr />
+    <footer>
+      <div class="footer1">
+        <div class="footer2">
+          <ul class="footer-menu">
+            <li class="navbar-menu-item">
+              <a href="#about">ABOUT</a>
+            </li>
+            <li class="navbar-menu-item"><a href="#menu">MENU</a></li>
+            <li class="navbar-menu-item"><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="logo1">
+          <a href="index.html"
+            ><img src="images/small-logo.png" alt="small logo"
+          /></a>
+        </div>
+        <div id="location">
+          <p>golgendragon@gmail.com</p>
+          <p>+44123456789</p>
+          <p>GOLD12 Dragon Street, 4</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function openImage(dishName) {
+        document.getElementById("text1").style.display = "none";
+        document.getElementById("text2").style.display = "none";
+        document.getElementById("text3").style.display = "none";
+        document.getElementById("text4").style.display = "none";
+        document.getElementById("text5").style.display = "none";
+        document.getElementById("text6").style.display = "none";
+        document.getElementById("text7").style.display = "none";
+        document.getElementById("text8").style.display = "none";
+        document.getElementById("text9").style.display = "none";
+        document.getElementById("text10").style.display = "none";
+        document.getElementById("text11").style.display = "none";
+
+        document.getElementById("imagen").style.display = "flex";
+        document.getElementById("imagenGrande").src =
+          "./images/menu/" + dishName + ".jpg";
+      }
+
+      function closeImage() {
+        document.getElementById("text1").style.display = "block";
+        document.getElementById("text2").style.display = "block";
+        document.getElementById("text3").style.display = "block";
+        document.getElementById("text4").style.display = "block";
+        document.getElementById("text5").style.display = "block";
+        document.getElementById("text6").style.display = "block";
+        document.getElementById("text7").style.display = "block";
+        document.getElementById("text8").style.display = "block";
+        document.getElementById("text9").style.display = "block";
+        document.getElementById("text10").style.display = "block";
+        document.getElementById("text11").style.display = "block";
+
+        document.getElementById("imagen").style.display = "none";
+        document.getElementById("imagenGrande").src = "";
+      }
+    </script>
+  </body>
+</html>
